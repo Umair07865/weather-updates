@@ -1,14 +1,14 @@
 <template>
-  <DashboardWheather msg="Welcome to Your Vue.js App" />
+  <DashboardWeather msg="Welcome to Your Vue.js App" />
 </template>
 
 <script>
-import DashboardWheather from "./components/DashboardWheather.vue";
+import DashboardWeather from "./components/DashboardWeather.vue";
 
 export default {
   name: "App",
   components: {
-    DashboardWheather,
+    DashboardWeather,
   },
 };
 </script>

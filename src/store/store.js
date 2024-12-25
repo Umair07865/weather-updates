@@ -34,10 +34,7 @@ const store = createStore({
         const currentRes = await fetch(
           `http://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=${API_KEY}`
         );
-        console.log("city name : ", city);
-
         const geoPosition = await currentRes.json();
-        console.log("geo : ", geoPosition);
         await fetch(
           `https://api.openweathermap.org/data/2.5/weather?lat=${geoPosition[0].lat}&lon=${geoPosition[0].lon}&appid=${API_KEY}`
         )

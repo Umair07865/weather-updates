@@ -192,7 +192,6 @@ export default {
     const forecast = computed(() => store.getters.getForecast);
     const loading = computed(() => store.getters.getLoadingState);
     const errors = computed(() => store.getters.getError);
-    console.log(errors, "dsaf");
     const weatherUpdates = computed(() => store.getters.getStoredata);
     const convertedTemperature = computed(() => {
       if (weatherUpdates.value && weatherUpdates.value.main) {
